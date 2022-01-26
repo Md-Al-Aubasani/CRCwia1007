@@ -1,0 +1,180 @@
+---
+title: "Documentation"
+author: "Muhammad Raditya Nayatama"
+date: "1/23/2022"
+output: html_document
+---
+
+## Data Science Process
+
+#### Questions
+Q) What are the risk factors for the leading cause of death in the 21st century world and are they preventable?
+
+This can be divided into 3 parts
+
+* What is the leading cause of death in the 21st century world?
+* What are the risk factors for this cause of death?
+* What are the right measures required to be taken to prevent the cause of death?
+
+----
+
+#### Finding Data
+
+**Description of the data sets used:** In this research, two data sets were used and for both we relied largely on the estimates presented in the Global Burden of Disease (GBD) studies that are produced under the leadership of the Institute for Health Metrics and Evaluation (IHME). The study is published in The Lancet at TheLancet.com/GBD and is the most regularly updated; comprehensive; and most in-depth analysis and synthesis of the causes and risk factors of death worldwide.
+
+----
+
+#### Getting Data
+
+The data sets are freely and easily accessible to the public through the website https://ourworldindata.org/ . Links to them are given under references tab.
+
+----
+
+#### Cleaning Data
+
+Due to the ease of use of R programming language, cleaning, sub-setting and other functions were easy and simple to do.
+
+----
+
+#### Analyzing Data
+
+After plotting graphs and analyzing the data our group reached the conclusion that **Cardiovascular diseases** are the leading cause of death in the modern world. So we began our research on how we data science students can do our part in helping society. 
+
+-----
+
+#### Presenting Data
+
+We thought it was important for our app to do three main things.
+
+1. Raise Awareness on this issue through data, storytelling and visualization.
+2. Provide easy methods for people to assess their cardiovascular risk
+3. Use data to help people make better life choices.
+
+----
+
+## Research Process
+
+---
+
+#### Purpose
+- We wanted to make a shiny app that can help others know if they are in risk of **Cardiovascular disease (CVD)** or not.
+
+----
+
+#### Questions
+1. What is the leading cause of death in the world?
+2. Is it possible to prevent the leading cause?
+3. What are the right measures required to be taken to prevent the cause of death?
+
+----
+
+#### Objectives
+1. To identify the leading cause of the world.
+2. To determine whether the leading cause can be prevented.
+3. To identify the measures needed to be taken to prevent the cause.
+4. To provide the public with an easy method for the public to assess their cardiovascular risks.
+
+----
+
+#### Findings
+- After researching, we found out that **Cardiovascular disease (CVD)** is one of the major causes of deaths for people from around the world. Next we decided to make an app that is able to assess a person's risk of **CVDs**. From then we collected all our research and information on **CVDs** that we think is most relevant and important to mention.
+
+- The formula for the Framingham Risk Calculator is given below:
+
+```{r, eval = FALSE}
+if (gender == "Male"){
+      AgeFactor = 3.06117; TotalCholFactor = 1.12370; HDLCholFactor = -0.93263;  AvgRisk = 23.9802; RiskPeriodFactor = 0.88936
+      
+      if (Hyper_Tension_medication == "Yes"){SysBPFactor = 1.99881}
+      else{SysBPFactor = 1.93303}
+      
+      if (diabetes == "Yes"){DM = 0.57367}
+      else {DM = 0}
+      
+      if (smoker == "Yes"){Cig = 0.65451}
+      else{Cig = 0}
+      
+}else if (gender == "Female"){
+    AgeFactor = 2.32888; TotalCholFactor = 1.20904; HDLCholFactor = -0.70833; AvgRisk = 26.1931; RiskPeriodFactor = 0.95012
+      
+    if (Hyper_Tension_medication == "Yes"){SysBPFactor = 2.82263}
+    else{SysBPFactor = 2.76157}
+      
+    if (diabetes == "Yes"){DM = 0.69154}
+    else {DM = 0}
+      
+    if (smoker == "Yes"){Cig = 0.52873}
+    else{Cig = 0}
+      
+  }
+    
+  #log() here is natural log.
+    
+riskfactors = (log(input$age_m1) * AgeFactor) + (log(input$totChol_m1*38.67) * TotalCholFactor) + (log(input$HDLchol_m1*38.67) * HDLCholFactor) + (log(input$sbp_m1) * SysBPFactor) + Cig + DM - AvgRisk
+    
+riskexp = exp(riskfactors)
+    
+risk = 100*(1 - RiskPeriodFactor^riskexp)
+```
+
+
+##### **About the Framingham Study**
+
+The Framingham study began in 1948, with the group of initially 5,209 patients recruited from the very same neighborhood - a town named Framingham, located in Massachusetts, US.
+
+At the beginning of the study, none of the patients involved had suffered from any cardiovascular (CV) disease (such as heart attack or stroke). Scientists and physicians monitored the entire population's health for 72 years. Every single case of CV disease was carefully recorded and analyzed and compared to a person's lifestyle and blood test results.
+
+This scrutinous observation identified major heart risk factors and created a Framingham 10-years risk assessment score.
+
+Every time you see a cardiac risk calculator, or any medical recommendation regarding cholesterol, blood pressure or physical activity - think of all the people of Framingham who played an essential role in the development of modern medicine.
+
+-----
+
+##### **WHO Risk Charts**
+
+**Description** of the 2 WHO risk charts, the updated WHO CVD risk prediction charts were developed and presented for 21 global regions, defined by GBD to maximize between-region variability and minimize heterogeneity in mortality and major drivers of health outcomes within each region. The charts are intended to allow the introduction of a total risk-stratification approach for management of CVD. They are presented as laboratory-based and non-laboratory-based charts. Laboratory-based algorithms include information on age, sex, smoking status, systolic blood pressure, history or evidence of diabetes mellitus, and the total cholesterol value. In the non-laboratorybased algorithms, body mass index (BMI) is included; information on diabetes mellitus and cholesterol is not necessary for these charts.
+
+
+----
+
+#### Results
+- After compiling all information and data we've gathered, we created an app that is able to show the deaths caused by **CVD**(from 2007-2017), calculate a person's risk of **CVD**, and give tips and suggestions on how to have a good healthy life.
+
+----
+
+#### Conclusions
+- Hopefully this shiny app will be able to help any person notice if their current condition is in risk of **CVD** and possibly help them avoid illness caused by **CVD**.
+
+-----
+
+## References
+
+-----
+
+#### **App Development**
+
+-----
+
+##### Link to datasets
+- Deaths from cardiovascular diseases, by risk factor. (n.d.). Our World in Data. https://ourworldindata.org/grapher/deaths-from-cardiovascular-diseases-by-risk-factor?country=%7EOWID_WRL
+- Ritchie, H. (2018, February 14). Causes of Death. Our World in Data. https://ourworldindata.org/causes-of-death
+
+##### Research on Risk Assessment
+- General Cardiovascular Risk Profile for Use in Primary Care. (2008, January 22). American Heart Association Journals. https://www.ahajournals.org/doi/10.1161/CIRCULATIONAHA.107.699579
+- Zaborowska, Ł. (2021, November 4). Framingham Risk Calculator. Heart Attack Risk. https://www.omnicalculator.com/health/framingham-risk
+- WHO cardiovascular disease risk laboratory-based charts. (n.d.).  https://www.who.int/docs/default-source/ncds/cvd-risk-laboratory-based-charts.pdf?sfvrsn=e2943d98_2
+
+-----
+
+#### **Information about CVDs**
+
+- Risk Checker. (n.d.). Healthdirect. https://www.healthdirect.gov.au/risk-checker/heart-kidney-diabetes
+- Risk-based CVD management. (n.d.). https://apps.who.int/iris/bitstream/handle/10665/333221/9789240001367-eng.pdf
+- NHS website. (2021, November 29). Cardiovascular disease. Nhs.Uk. https://www.nhs.uk/conditions/cardiovascular-disease/
+- Physical Inactivity and Cardiovascular Disease. (1999, August). New York State, Department of Health. https://www.health.ny.gov/diseases/chronic/cvd.htm
+- The five main food groups - Healthy eating | Food Standards Scotland | Food Standards Scotland. (2019, October 11). Food Standard Scotland. https://www.foodstandards.gov.scot/consumers/healthy-eating/nutrition/the-five-food-groups
+- Foods That Are Bad for Your Heart. (2020). WebMD. https://www.webmd.com/heart-disease/ss/slideshow-foods-bad-heart
+- Richards, L. (2020, August 6). What is the cardiac diet? Medical News Today. https://www.medicalnewstoday.com/articles/cardiac-diet#foods-to-include
+- Physical Activity and Cardiovascular Disease. (n.d.). Physiopedia. https://www.physio-pedia.com/Physical_Activity_and_Cardiovascular_Disease#cite_note-Lee_I-M.2C_Skerett_PJ:-5
+- Smoking and Cardiovascular Disease. (n.d.). Johns Hopkins Medicine. https://www.hopkinsmedicine.org/health/conditions-and-diseases/smoking-and-cardiovascular-disease?amp=true
+- Wikipedia contributors. (2021, November 25). Food group. Wikipedia. https://en.wikipedia.org/wiki/Food_group

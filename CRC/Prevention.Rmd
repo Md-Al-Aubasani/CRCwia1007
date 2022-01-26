@@ -1,0 +1,152 @@
+---
+title: ' **Tips to have a good healthy life** '
+output:  
+  prettydoc::html_pretty:
+    theme: hpstr
+    highlight: github
+    
+---
+
+
+
+
+
+
+
+> ### Healthy food
+
+### Foods to include:  
+ 
+  1. **Fruits and vegetables:**Antioxidants, that plant food contains can help protect the heart. Good source of fiber essential for heart health. Experts suggest 4-5 servings of vegetables per day. Focus on non-starchy vegs recommended.
+  2.   **Oily fish:** Contains omega-3 fatty acids which have anti-inflammatory properties and good for the heart. 2 Servings of fatty fish is recommended per week. A serving is 3.5 ounces cooked or a three-quarter cup of flaked fish.
+Omega-3 fatty acids include: salmon, mackerel, herring, lake trout, sardines, albacore tuna.
+  3.   **Whole grains:** Limiting refined grains and opting for whole grains helps against cardiovascular disease. Whole grains contain more beneficial fiber than refined grains. Whole grain brown bread, barley and rice can be part of a healthy diet.
+  4.   **Nuts, Seeds & Legumes:** The best diets for cardiovascular health include 2-3 cups of nuts, seeds, and legumes daily.  
+        Nuts: Walnuts, almonds, Brazil nuts, hazelnuts, pecans, cashews.  
+        Seeds: Sunflower seeds, pumpkin seeds, flaxseeds, hemp seeds, chia seeds.  
+        Legumes:  garbanzo beans, lentils black beans, kidney beans, adzuki beans, fava beans.  
+  5. **Low Fat Dairy:** Skimmed Milk, low fat dairy products.  
+  
+### Foods to avoid:  
+  
+  1.  **Red and processed meat:** Source of saturated fat. Recommended to replace with plant protein to lower heart disease. Ex. Nuts, legumes, whole grains, soy products.  
+  2.  **Sugar sweetened foods and beverages:** Recommended dietary guideline would limit calories from added sugars to no more than 10% each day. In case of 2000 calorie diet, sugar would be 200 calories or 12 teaspoons. Avoiding excess sugar can help maintain moderate weight.  
+  3.  **Processed Foods:** These often contain -> high sugar, high salt, trans fats, saturated fats, additives, and food colorings. Recommendation: Cook meals at home.  
+  4.  **Refined Carbs:** Lack fiber and potentially can cause blood sugar imbalance. Consuming a lot of refined carbs -> insulin resistance, weight gain -> cardiovascular disease. Recommended to limit: white bread, pasta, rice, cakes, biscuits, pastries, breakfast, cereals, pizza dough, sweet desserts, white flour.  
+  5.  **Salt:** Too much salt -> high blood pressure -> increase in cardiovascular risk. Reduction of salt by 1000 mg -> reduce blood pressure. Recommendation: Check label and avoid increased intake, prefer whole foods instead.  
+  
+### Foods and Direct Problems:  
+  
++ Sugar, Salt, Fat -> Raises risk for Heart attack or stroke.
++ Bacon -> Raises low-density lipoprotein (LDL), or bad cholesterol, boosting the chance of heart attack or stroke.
++ Red Meat -> Boost in cholesterol.
++ Soda -> Increase in weight, could lead to type-2 diabetes, high blood pressure and heart disease.
++ Based Goods -> Added Sugar leads to weight gain, higher triglyceride levels lead to heart disease, spike in blood sugar.
++ Processed Meats -> High amounts of salt and high amounts of saturated fat, worst for the heart.
++ White Rice, Bread and Pasta -> Quick conversion to sugar which body stores as fat, eventually causing belly fat and increasing risks to heart disease and type 2 diabetes.
++ Pizza -> Staggering amount of sodium, fat, and calories, all increasing risk of heart attack.
++ Alcohol -> Heavy drinking can lead to high blood pressure, heart failures, strokes, and weight gain.
++ Butter -> High in saturated fat, which can raise bad cholesterol and make heart disease more likely. Recommendation: Replacing with olive oil and vegetable oil-based spreads, which contain heart-healthy-mono and polyunsaturated fats.
++ Fried Chicken -> Deep-frying chicken adds calories, fat and sodium to an otherwise healthy food. Overconsumption leads to type 2 diabetes, obesity and high blood pressure, raising the odds of heart failure.
++ Canned Soup -> Lots of Sodium, can cause high blood pressure, heart attack, stroke and heart failure. 
+ 
+### Food Division and Breakdown:  
+  
+1.  **Dairy:** 
+
+* Good source of protein and vitamins. Contains Calcium -> leads to healthy and strong bones. Dairy-free milk alternatives include soya milk and nut milks.  
+* Dairy products like cheese and yoghurts can be high in salt, sugar and fat -> unhealthy for the heart.
+
+2.  **Protein:** 
+
+* Pulses -> Things like Beans, Peas and Lentils -> Good Source of fiber, vitamins and minerals, naturally low in fat.  
+* Other veg proteins -> Include tofu, bean curd & mycorprotein, quorn -> full of protein, low in fat and can be used in place of meat.
+* Fish -> Great Source of Protein, Vitamins, Minerals. Oily fish recommended.    
+* Eggs -> Good source of protein, vitamins and minerals. Great for making healthy, quick dishes. No recommended limit on consumption.  
+* Meats -> Good source of protein, vitamins, minerals, especially the main source of vitamin B12.  
+* Red and processed meat -> too much can increase the risk of bowel cancer. Recommended: No more than 70g/day. Some are higher in fat. Eating lots of saturated fat can increase blood cholesterol levels.  
+
+3.  **Fat:** 
+
+*  Oils & Spreads -> Plant-based oils like vegetable, grapeseed and olive oil are rich in unsaturated fat which helps lower cholesterol and reduce the risk of heart disease.  
+* Food and drink high in fat, salt and sugar -> Include chocolate, biscuits, savoury snacks and full-sugar soft drinks. Too much increases the risk of tooth decay and obesity. 
+
+4.  **Hydration:**  
+
+* Recommended -> 6-8 glasses of fluid/day.  
+      
+> ### Blood Pressure   
+ 
++ High blood pressure is usually around 140/90mmHg or higher (or 150/90mmHg or higher if you're over the age of 80)
++ Ideal blood pressure is usually from 90/60mmHg to 120/80mmHg
++ Between 120/80mmHg and 140/90mmHg could mean you're at risk of developing high blood pressure if you do not take steps to keep your blood pressure under control.  
+**Note:** Everyone's blood pressure will be slightly different. What's considered low or high for you may be normal for someone else.  
+
+> ###  Smoking  
+ 
++ One out of every 5 smoking-related deaths is caused by heart disease.  
+   
++ Women older than 35 who smoke and take birth control pills are at much greater risk for heart disease or stroke.  
+  
+    
++ Cigarette smokers are 2 to 4 times more likely to get heart disease than nonsmokers.  
+    
++ Cigarette smoking doubles a person's risk for stroke.   
+  
+> ### Cholesterol  
+  
++ total cholesterol = the overall amount of cholesterol in your blood, including both "good" and "bad" cholesterol  
++ good cholesterol(HDL) = this makes you less likely to have heart problems or a stroke  
++ bad cholesterol( LDL and non-HDL) = this makes you more likely to have heart problems or a stroke  
++ triglycerides = a fatty substance similar to bad cholesterol   
+
+Result  | Healthy level
+------------- | -------------
+Total cholesterol    | 5 or below
+HDL (good cholesterol)        | 1 or above
+LDL (bad cholesterol) | 3 or below
+Non-HDL (bad cholesterol) | 4 or below
+Triglycerides | 2.3 or below 
+
+
+ > ###  Overweight/Obese 
+ 
+ + Being overweight or obese increases your risk of developing diabetes and high blood pressure, both of which are risk factors for CVD.  
+ 
+  **You're at an increased risk of CVD if:**  
+
++ Your body mass index (BMI) is 25 or above.  
+  
++ You're a man with a waist measurement of 94cm (about 37 inches) or more, or a woman with a waist measurement of 80cm (about 31.5 inches) or more.  
+ 
+**For most adults:**
++ 18.5 to 24.9 means you're a healthy weight  
+  
++ 25 to 29.9 means you're overweight  
+  
++ 30 to 39.9 means you're obese  
+  
++ 40 or above means you're severely obese  
+  
+  **Note:** BMI is not used to diagnose obesity because people who are very muscular can have a high BMI without much fat. That's why you'll need to measure excessive fat in waist size.
+  
+> ### Physical activity  
+
++ The American Heart Association recommends 30-60 minutes of aerobic exercise three to four times peer week to promote cardiovascular fitness. In 1996 the Report of the Surgeon General on Physical Activity and Health recommended the minimum level of physical activity required to achieve health benefits was a daily expenditure of 150 kilo calories in moderate or vigorous activities.  
++ recommending adults to accumulate at least 30 minutes of moderate activity most days of the week. Moderate activities include pleasure walking, climbing stairs, gardening, yard work, moderate-to-heavy housework, dancing and home exercise. More vigorous aerobic activities, such as brisk walking running, swimming, bicycling, roller skating and jumping rope — done three or four times a week for 30-60 minutes — are best for improving the fitness of the heart and lungs.  
+  
++ In USA It is estimated that approximately 35% of coronary heart disease mortality is due to physical inactivity.  
+
+
+
+>### Further Reading
+
+- Physical Inactivity and Cardiovascular Disease. (1999, August). New York State, Department of Health. https://www.health.ny.gov/diseases/chronic/cvd.htm
+- The five main food groups - Healthy eating | Food Standards Scotland | Food Standards Scotland. (2019, October 11). Food Standard Scotland. https://www.foodstandards.gov.scot/consumers/healthy-eating/nutrition/the-five-food-groups
+- Foods That Are Bad for Your Heart. (2020). WebMD. https://www.webmd.com/heart-disease/ss/slideshow-foods-bad-heart
+- Richards, L. (2020, August 6). What is the cardiac diet? Medical News Today. https://www.medicalnewstoday.com/articles/cardiac-diet#foods-to-include
+- Physical Activity and Cardiovascular Disease. (n.d.). Physiopedia. https://www.physio-pedia.com/Physical_Activity_and_Cardiovascular_Disease#cite_note-Lee_I-M.2C_Skerett_PJ:-5
+- Smoking and Cardiovascular Disease. (n.d.). Johns Hopkins Medicine. https://www.hopkinsmedicine.org/health/conditions-and-diseases/smoking-and-cardiovascular-disease?amp=true
+- Wikipedia contributors. (2021, November 25). Food group. Wikipedia. https://en.wikipedia.org/wiki/Food_group
+
+----

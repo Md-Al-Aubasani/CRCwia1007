@@ -1,0 +1,42 @@
+
+>### What is the purpose of the CRC (Cardiovascular Risk Checker) App?
+
+#### This app has three main aims;
+
+---
+
+#### 1. Raise Awareness
+
+Being the leading cause of death for the last 20 years, heart diseases are now killing more than ever before. It now represents 32% of total deaths from all causes. Therefore, it is important to raise awareness about this issue and provide easy methods for the public to assess their cardiovascular risk.
+
+* When you go to the **Awareness** tab, you are firstly met with an infographic that we hope makes you better understand the severity of this issue.
+* You then get to see the number of deaths by the cause of death in different countries for different years. Most of the time the leading cause of death is cardiovascular diseases.
+* After that there is a section that shows you the change in number of deaths over years, unfortunately the chart for cardiovascular diseases is going up.
+* There are three different graphs for you to look at, two are interactive and the other is simple.
+
+-----
+
+#### 2. Risk Assessment
+
+Then from there onwards we try and provide simple and easy methods for the public to assess their risk level.
+
+Under the **Check Your Risk** tab you have 3 options to choose from;
+
+1. **Method 1:** This is a calculative method to check your cardiovascular risk by entering important factors like your blood pressure and cholesterol levels.
+2. **Method 2:** This is a chart based method, developed by WHO (World Health Organization) to check for cardiovascular risk based on your BMI.
+3. **Method 3:** This is a chart based method, developed by WHO (World Health Organization) to check for cardiovascular risk based on whether you have diabetes.
+
+
+----
+
+#### 3. Prevention Awareness
+
+Under the **Prevention** tab we try and show which factors affect cardiovascular deaths by presenting 2 graphs; one is simple and the other is interactive.
+After looking at these charts you can go through our brief prevention fact sheet to get a better understanding on which factors are important in protecting oneself from cardiovascular diseases.
+We also made a list of prevention facts on what things lead to a higher risk of cardiovascular diseases.
+
+----
+
+For our data science and research process please refer to the **Documentation** tab.
+
+-----
