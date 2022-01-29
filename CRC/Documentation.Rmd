@@ -138,7 +138,7 @@ Every time you see a cardiac risk calculator, or any medical recommendation rega
 ----
 
 #### Results
-- After compiling all information and data we've gathered, we created an app that is able to show the deaths caused by **CVD**(from 2007-2017), calculate a person's risk of **CVD**, and give tips and suggestions on how to have a good healthy life.
+- After compiling all information and data we've gathered, we created an app that is able to show the deaths caused by **CVD**(from 2000-2019), calculate a person's risk of **CVD**, show the risk factors for CVDs for each country and year(from 2000-2017), and provide tips and suggestions on how to have a good healthy life.
 
 ----
 

@@ -5,6 +5,7 @@ library(scales)
 library(reshape2)
 library(highcharter)
 library(DT)
+library(markdown)
 
 
 
@@ -19,14 +20,16 @@ countries1 <- unique(riskfactors$Entity)
 # Define UI
 ui <- fluidPage(theme = shinytheme("sandstone"),
                 navbarPage(tags$`color-profile`(tags$img(src = "CRC.png", height="30"), "Cardiovascular Risk Checker"),
-                           tabPanel("Home",sidebarPanel(h3("Cardiovascular Risk Checker (CRC)"), tags$img(src = "CRC.png", height = "410")),mainPanel(div(includeMarkdown("Introduction.Rmd"),align = "justify"))), # Navbar 1, tabPanel
+                           tabPanel("Home",sidebarPanel(h3("Cardiovascular Risk Checker (CRC)", align  = "center"),
+                          
+                           tags$img(src = "CRC.png", width = "100%", height = "auto")),mainPanel(div(includeMarkdown("Introduction.Rmd"),align = "justify"))), # Navbar 1, tabPanel
                            tabPanel("Awareness",
                                     tabsetPanel(type = "tab",
-                                                tabPanel("Did you know?", tags$img(style="display: block; margin-left: auto; margin-right: auto;", src= "infograph.png", height = 2500, align = "center")),
+                                                tabPanel("Did you know?", tags$img(style="display: block; margin-left: auto; margin-right: auto;", src= "infograph.png", width = "100%",height = "auto", align = "center")),
                                                 tabPanel("Interactive View",
-                                                         h1("Here you can use the Interactive view to look at the causes of deaths"),
+                                                         h3("Here you can use the Interactive view to look at the number of deaths, by the cause of death.", align = "center"),
                                                          sidebarPanel(
-                                                           tags$h3("Deaths depending on the cause"),
+                                                           tags$h4("Deaths depending on the cause"),
                                                            selectInput("country_g1", "Country:", c(countries0), selected = "World"),
                                                            selectInput("year_g1", "Year:", c(2000:2019)),
                                                            actionButton("button_g1", "Result"),
@@ -40,9 +43,9 @@ ui <- fluidPage(theme = shinytheme("sandstone"),
                                                            
                                                            
                                                          )),
-                                                tabPanel("Change Over Time",
+                                                tabPanel("Change Over Time", h3("Here you can look at the change in number of deaths over time, by the cause of death.", align = "center"),
                                                          sidebarPanel(
-                                                           tags$h4("Change in deaths over time, by cause of death"),
+                                                           h4("Change in deaths over time, by cause of death"),
                                                            selectInput("country2_g1", "Country:", c(countries0), selected = "World"),
                                                            sliderInput("year2_g1", "Period:", animate = TRUE,value = c(2000,2019), min = 2000, max = 2019),
                                                            actionButton("button2_g1", "Result"),
@@ -54,9 +57,9 @@ ui <- fluidPage(theme = shinytheme("sandstone"),
                                                          )
                                                          ),
                                                 tabPanel("Simple View",
-                                                         h1("Here you can use the simple view to look at the causes of death"),
+                                                         h3("Here you can use the simple view to look at the number of deaths, by the cause of death.", align = "center"),
                                                          sidebarPanel(
-                                                           tags$h3("Deaths depending on the cause"),
+                                                           tags$h4("Deaths depending on the cause"),
                                                            selectInput("country1_g1", "Country:", c(countries0), selected = "World"),
                                                            selectInput("year1_g1", "Year:", c(2000:2019)),
                                                            actionButton("button1_g1", "Result"),
@@ -74,7 +77,8 @@ ui <- fluidPage(theme = shinytheme("sandstone"),
                                     )),
                            tabPanel("Check Your Risk",
                                     tabsetPanel( type = "tab",
-                                                 tabPanel(title = "Method 1",
+                                                 tabPanel(title = "Method 1", 
+                                                          h3("This is a calculative method to check your cardiovascular risk by entering important factors like your blood pressure and cholesterol levels.", align = "center"),
                                                           sidebarPanel(
                                                             tags$h3("Framingham Risk Calculator"),
                                                             
@@ -98,17 +102,18 @@ ui <- fluidPage(theme = shinytheme("sandstone"),
                                                             
                                                             actionButton("button_m1", "Result"),
                                                             
-                                                            h6("Disclaimer: This is NOT a diagnosis. This is a medically proven method of assessing someone's risk of CVD. If you want a CVD diagnosis please contact a medical professional.")
+                                                            h6("Disclaimer: This is NOT a diagnosis. This is a medically practiced method of assessing someone's risk of CVD. If you want a CVD diagnosis please contact a medical professional.")
                                                             
                                                           ), # sidebarPanel
                                                           mainPanel(
-                                                            h3("The calculator will give back a percentage of what your risk level might be"),
+                                                            h4("The calculator will give back a percentage of what your risk level might be."),
                                                             verbatimTextOutput("result_m1"),
-                                                            h5("Risk is considered low if the risk score is less than 10%, moderate if it is 10% to 19%, and high if it is 20% or higher."),
-                                                            h5("For more information on this method you can go through our documentation tab.")
+                                                            h4("Risk is considered low if the risk percentage is less than 10%, moderate if it is 10% to 19%, and high if it is 20% or higher."),
+                                                            HTML("<h4>For more information on this method you can go through our <b>documentation</b> tab.</h4>")
                                                             
                                                           )),
                                                  tabPanel(title = "Method 2",
+                                                          h3("This is a chart based method, developed by WHO (World Health Organization) to check for cardiovascular risk based on your BMI.", align = "center"),
                                                           sidebarPanel(
                                                             tags$h3("WHO Risk Chart for BMI"),
                                                             
@@ -130,7 +135,10 @@ ui <- fluidPage(theme = shinytheme("sandstone"),
                                                             
                                                             actionButton("button_m2", "Result"),
                                                             
-                                                            h6("Disclaimer: This is NOT a diagnosis. This is a medically proven method of assessing someone's risk of CVD. If you want a CVD diagnosis please contact a medical professional.")
+                                                            h6("Disclaimer: This is NOT a diagnosis. This is a medically practiced method of assessing someone's risk of CVD. If you want a CVD diagnosis please contact a medical professional."),
+                                                            
+                                                            HTML("<b>Simple Guide:</b>"),
+                                                            tags$img(src = "BMI guide.png", width = "100%", height = "auto")
                                                             
                                                             
                                                           ), # sidebarPanel
@@ -142,6 +150,7 @@ ui <- fluidPage(theme = shinytheme("sandstone"),
                                                           )
                                                  ),
                                                  tabPanel(title = "Method 3",
+                                                          h3("This is a chart based method, developed by WHO (World Health Organization) to check for cardiovascular risk based on whether you have diabetes.", align = "center"),
                                                           sidebarPanel(
                                                             tags$h3("WHO Risk Chart for Diabetes"),
                                                             
@@ -163,8 +172,10 @@ ui <- fluidPage(theme = shinytheme("sandstone"),
                                                             
                                                             actionButton("button_m3", "Result"),
                                                             
-                                                            h6("Disclaimer: This is NOT a diagnosis. This is a medically proven method of assessing someone's risk of CVD. If you want a CVD diagnosis please contact a medical professional.")
+                                                            h6("Disclaimer: This is NOT a diagnosis. This is a medically practiced method of assessing someone's risk of CVD. If you want a CVD diagnosis please contact a medical professional."),
                                                             
+                                                            HTML("<b>Simple Guide:</b>"),
+                                                            tags$img(src = "Diabetes guide.png", width = "100%", height = "auto")
                                                             
                                                           ), # sidebarPanel
                                                           mainPanel(
@@ -179,10 +190,10 @@ ui <- fluidPage(theme = shinytheme("sandstone"),
                            tabPanel("Prevention",
                                     tabsetPanel(type = "tab",
                                                 tabPanel("Interactive View",
-                                                         h4("Here you can use the Interactive view to look at what affects cardiovascular diseases in your country or  anywhere."),
-                                                         h4("You can use the insight gained to search in the prevention fact sheet,"),
+                                                         h3("Here you can use the interactive view to look at the risk factors for deaths caused by cardiovascular diseases, in your country or anywhere.", align = "center"),
+                                                         h3("Then you can use the information gained to search in the prevention fact sheet.", align = "center"),
                                                          sidebarPanel(
-                                                           tags$h3("Deaths depending on the cause"),
+                                                           tags$h3("Cardiovascular deaths depending on the risk factor"),
                                                            selectInput("country_g2", "Country:", c(countries1), selected = "World"),
                                                            selectInput("year_g2", "Year:", c(2000:2017)),
                                                            actionButton("button_g2", "Result"),
@@ -198,10 +209,10 @@ ui <- fluidPage(theme = shinytheme("sandstone"),
                                                            
                                                          )),
                                                 tabPanel("Simple View",
-                                                         h3("Here you can use the simple view to look at what affects cardiovascular diseases in your country or anywhere."),
-                                                         h3("You can use the insight gained to search in the prevention fact sheet."),
+                                                         h3("Here you can use the simple view to look at the risk factors for deaths caused by cardiovascular diseases, in your country or anywhere.", align = "center"),
+                                                         h3("Then you can use the information gained to search in the prevention fact sheet.", align = "center"),
                                                          sidebarPanel(
-                                                           tags$h3("Deaths depending on the cause"),
+                                                           tags$h3("Cardiovascular deaths depending on the risk factor"),
                                                            selectInput("country1_g2", "Country:", c(countries1), selected = "World"),
                                                            selectInput("year1_g2", "Year:", c(2000:2017)),
                                                            actionButton("button1_g2", "Result"),

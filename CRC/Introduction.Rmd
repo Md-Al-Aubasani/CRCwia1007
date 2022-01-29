@@ -33,7 +33,6 @@ Under the **Check Your Risk** tab you have 3 options to choose from;
 
 Under the **Prevention** tab we try and show which factors affect cardiovascular deaths by presenting 2 graphs; one is simple and the other is interactive.
 After looking at these charts you can go through our brief prevention fact sheet to get a better understanding on which factors are important in protecting oneself from cardiovascular diseases.
-We also made a list of prevention facts on what things lead to a higher risk of cardiovascular diseases.
 
 ----
 

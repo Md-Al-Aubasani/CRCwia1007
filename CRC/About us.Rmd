@@ -9,7 +9,9 @@ output: html_document
 
 ### Background
 
-We are the **CRC App Team** (Group T). We created this app to help people over 35 years of age determine whether they are at risk of **Cardiovascular** or not. We came up with the idea to make the app from researching on what was the most frequent cause of death. Then we found out that **Cardiovascular disease (CVD)** was one of the main causes of death around the world. From then, our group decided to develop an app that can assess if someone is at risk of **CVD** called the **Cardiovascular Risk Checker**.
+We are the **CRC App Team** (Group T). We created this app to help people over 35 years of age determine whether they are at risk of a **Cardiovascular disease** or not. We came up with the idea to make the app from researching on what was the most frequent cause of death. Then we found out that **Cardiovascular disease (CVD)** was one of the main causes of death around the world. From then, our group decided to develop an app that can assess if someone is at risk of **CVD** called the **Cardiovascular Risk Checker**.
+
+Link to our github: https://github.com/Md-Al-Aubasani/CRCwia1007
 
 ### Members
 

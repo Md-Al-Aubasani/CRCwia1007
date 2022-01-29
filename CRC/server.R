@@ -7,6 +7,7 @@ library(scales)
 library(reshape2)
 library(highcharter)
 library(DT)
+library(markdown)
 
 
 deaths <- read.csv("annual-number-of-deaths-by-cause.csv")
@@ -116,7 +117,7 @@ server <- function(input, output) {
     
     risk = 100*(1 - RiskPeriodFactor^riskexp)
     
-    risk <- paste0("Your cardiovascular risk percentage is ",round(risk, digits = 2),"%")
+    risk <- paste0("Your CVD risk percentage is ",round(risk, digits = 2),"%")
     
     return(risk)
     
@@ -210,7 +211,7 @@ server <- function(input, output) {
                         pointFormat = "{point.y} Deaths",
                         dataLabelsFilter = min(selection)+700,
                         packedbubbleMinSize = "25%",
-                        packedbubbleMaxSize = "170%",
+                        packedbubbleMaxSize = "120%",
                         theme = "gridlight",
                         packedbubbleZMin = min(selection),
                         packedbubbleZmax = max(selection), split = 0,
@@ -334,8 +335,11 @@ server <- function(input, output) {
     
     df<-arrange(df, variable,  Year)
     
+    colnames(df) <- c("Year", "variable", "Deaths")
+    
     hc <- df %>%
-      hchart('line', hcaes(x = Year, y = value, group = variable))
+      hchart('line', hcaes(x = Year, y = Deaths, group = variable))
+    
     
     return(hc)
   })
